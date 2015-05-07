@@ -1,0 +1,31 @@
+{
+  "name": "nestling",
+  "version": "1.0.0",
+  "description": "Nest API wrapper",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/continuationlabs/nestling.git"
+  },
+  "dependencies": {
+    "boom": "2.x.x",
+    "hoek": "2.x.x",
+    "wreck": "5.x.x"
+  },
+  "devDependencies": {
+    "insync": "1.x.x"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nest",
+    "automation",
+    "smart home"
+  ],
+  "author": "Continuation Labs",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/continuationlabs/nestling/issues"
+  }
+}

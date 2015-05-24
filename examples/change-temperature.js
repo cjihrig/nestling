@@ -1,5 +1,5 @@
 var Insync = require('insync');
-var Nestling = require('..');
+var Nestling = require('../lib');
 var token = 'your_token';
 var house = 'your_structure_id';
 var thermostat = 'your_thermostat_id';

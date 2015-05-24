@@ -2,7 +2,7 @@
   "name": "nestling",
   "version": "1.0.0",
   "description": "Nest API wrapper",
-  "main": "index.js",
+  "main": "lib/index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/continuationlabs/nestling.git"

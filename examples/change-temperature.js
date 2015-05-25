@@ -1,3 +1,5 @@
+'use strict';
+
 var Insync = require('insync');
 var Nestling = require('../lib');
 var token = 'your_token';
@@ -27,7 +29,7 @@ function updateDevice(data, next) {
     id: thermostat,
     type: 'thermostats',
     payload: {
-      "target_temperature_f": 73,
+      'target_temperature_f': 73
     }
   }, function(err, results) {
     if (err) {

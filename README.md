@@ -3,7 +3,6 @@
 [![Current Version](https://img.shields.io/npm/v/nestling.svg)](https://www.npmjs.org/package/nestling)
 [![Build Status via Travis CI](https://travis-ci.org/continuationlabs/nestling.svg?branch=master)](https://travis-ci.org/continuationlabs/nestling)
 ![Dependencies](http://img.shields.io/david/continuationlabs/nestling.svg)
-![devDependencies](http://img.shields.io/david/dev/continuationlabs/nestling.svg)
 
 **This is still a work in progress.**
 

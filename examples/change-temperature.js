@@ -3,15 +3,14 @@
 var Insync = require('insync');
 var Nestling = require('../lib');
 var token = 'your_token';
-var house = 'your_structure_id';
 var thermostat = 'your_thermostat_id';
 
 
-function noop(next) { next(null, {}); }
+function noop (next) { next(null, {}); }
 
 
-function getStructuresAndDevices(data, next) {
-  Nestling.getStructuresAndDevices({token: token}, function(err, results) {
+function getStructuresAndDevices (data, next) {
+  Nestling.getStructuresAndDevices({token: token}, function (err, results) {
     if (err) {
       return next(err);
     }
@@ -23,7 +22,7 @@ function getStructuresAndDevices(data, next) {
 }
 
 
-function updateDevice(data, next) {
+function updateDevice (data, next) {
   Nestling.updateDevice({
     token: token,
     id: thermostat,
@@ -31,7 +30,7 @@ function updateDevice(data, next) {
     payload: {
       'target_temperature_f': 73
     }
-  }, function(err, results) {
+  }, function (err, results) {
     if (err) {
       return next(err);
     }
@@ -48,6 +47,6 @@ Insync.waterfall([
   getStructuresAndDevices, // Read the initial settings
   updateDevice,            // Change the temperature
   getStructuresAndDevices  // Read the new settings
-], function(err, results) {
+], function (err, results) {
   console.log(err);
 });

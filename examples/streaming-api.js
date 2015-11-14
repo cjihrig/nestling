@@ -7,12 +7,12 @@ var house = 'your_structure_id';
 var thermostat = 'your_thermostat_id';
 
 
-nest.on('error', function(err) {
+nest.on('error', function (err) {
   console.error('ERROR: ' + err);
 });
 
 
-nest.on('initialized', function(data) {
+nest.on('initialized', function (data) {
   console.log('Initialized');
 
   nest.updateDevice({
@@ -25,19 +25,19 @@ nest.on('initialized', function(data) {
 });
 
 
-nest.on('auth', function(authData) {
+nest.on('auth', function (authData) {
   console.log('Authenticated: ' + JSON.stringify(authData, null, 2));
 });
 
 
-nest.on('data', function(data) {
+nest.on('data', function (data) {
   console.log('Data:');
-  // console.log(nest.getStructuresAndDevices());
-  // console.log(nest.getDevices());
-  // console.log(nest.getDevicesByType({type: 'thermostats'}));
-  // console.log(nest.getDevice({type: 'thermostats', id: thermostat}));
-  // console.log(nest.getStructures());
-  // console.log(nest.getStructure({id: house}));
+  console.log(nest.getStructuresAndDevices());
+  console.log(nest.getDevices());
+  console.log(nest.getDevicesByType({type: 'thermostats'}));
+  console.log(nest.getDevice({type: 'thermostats', id: thermostat}));
+  console.log(nest.getStructures());
+  console.log(nest.getStructure({id: house}));
 });
 
 
